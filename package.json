@@ -1,0 +1,17 @@
+{
+  "name": "openswe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-bipinkalra-scaler:scaleracademy/openswe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.10"
+  }
+}

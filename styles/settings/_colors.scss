@@ -1,0 +1,39 @@
+// Accent color variations
+$accent-primary: rgb(32, 129, 226);
+$accent-primary-dark: rgb(24, 104, 183);
+$accent-primary-light: rgb(42,205,228);
+
+$green: rgb(52, 199, 123);
+$red: rgb(235, 87, 87);
+
+// Primary tones
+$primary-dark: rgb(4, 17, 29);
+$primary-light: rgb(255, 255, 255);
+
+// Secondary tones
+$secondary-dark: rgb(53, 56, 64);
+
+// Tertiary tones
+$tertiary-dark: rgb(112, 122, 131);
+
+$color-list: (
+  "accent-primary" :$accent-primary,
+  "accent-primary-dark" :$accent-primary-dark,
+  "accent-primary-light" :$accent-primary-light,
+  "green": $green,
+  "red": $red,
+  "primary-dark": $primary-dark,
+  "primary-light": $primary-light,
+  "secondary-dark": $secondary-dark,
+  "tertiary-dark": $tertiary-dark
+);
+
+@each $abbrev, $color in $color-list {
+  .text-#{$abbrev} {
+    color: $color;
+  }
+
+  .bg-#{$abbrev} {
+    background-color: $color;
+  }
+}
