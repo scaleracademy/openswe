@@ -13,6 +13,7 @@ $font-2: 1.4rem;
 $font-3: 1.6rem; // 16px -> HTML Font size is 10px
 $font-4: 2rem;
 $font-5: 2.4rem;
+$font-6: 3.2rem;
 $font-large: 4.5rem;
 
 
@@ -29,6 +30,7 @@ $font-sizes: (
   "font-3" :$font-3,
   "font-4" :$font-4,
   "font-5" :$font-5,
+  "font-6" :$font-6,
   "font-large" :$font-large
 );
 

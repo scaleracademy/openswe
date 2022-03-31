@@ -1,0 +1,69 @@
+$spacing-variants: (0, 5, 10, 15, 20);
+$margin-prefix: 'm';
+$padding-prefix: 'p';
+$left-prefix: 'l';
+$right-prefix: 'r';
+$top-prefix: 't';
+$bottom-prefix: 'b';
+$vertical-prefix: 'v';
+$horizontal-prefix: 'h';
+
+@each $spacing in $spacing-variants {
+  $spacing-in-px: $spacing * 0.1rem;
+
+  .#{$margin-prefix}-#{$spacing} {
+    margin: $spacing-in-px;
+  }
+
+  .#{$padding-prefix}-#{$spacing} {
+    padding: $spacing-in-px;
+  }
+
+  .#{$margin-prefix}-#{$left-prefix}-#{$spacing} {
+    margin-left: $spacing-in-px;
+  }
+
+  .#{$padding-prefix}-#{$left-prefix}-#{$spacing} {
+    padding-left: $spacing-in-px;
+  }
+
+  .#{$margin-prefix}-#{$right-prefix}-#{$spacing} {
+    margin-right: $spacing-in-px;
+  }
+
+  .#{$padding-prefix}-#{$right-prefix}-#{$spacing} {
+    padding-right: $spacing-in-px;
+  }
+
+  .#{$margin-prefix}-#{$top-prefix}-#{$spacing} {
+    margin-top: $spacing-in-px;
+  }
+
+  .#{$padding-prefix}-#{$top-prefix}-#{$spacing} {
+    padding-top: $spacing-in-px;
+  }
+
+  .#{$margin-prefix}-#{$bottom-prefix}-#{$spacing} {
+    margin-bottom: $spacing-in-px;
+  }
+
+  .#{$padding-prefix}-#{$bottom-prefix}-#{$spacing} {
+    padding-bottom: $spacing-in-px;
+  }
+
+  .#{$margin-prefix}-#{$vertical-prefix}-#{$spacing} {
+    margin: $spacing-in-px 0;
+  }
+
+  .#{$padding-prefix}-#{$vertical-prefix}-#{$spacing} {
+    padding: $spacing-in-px 0;
+  }
+
+  .#{$margin-prefix}-#{$horizontal-prefix}-#{$spacing} {
+    margin: 0 $spacing-in-px;
+  }
+
+  .#{$padding-prefix}-#{$horizontal-prefix}-#{$spacing} {
+    padding: 0 $spacing-in-px;
+  }
+}
