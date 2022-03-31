@@ -1,0 +1,56 @@
+%button {
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  border: 1px solid $accent-primary;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  border-radius: 1rem;
+}
+
+.button-primary {
+  @extend %button;
+
+  background: $accent-primary;
+  color: $primary-light;
+
+  &:hover:not([disabled]), &:active:not([disabled]) {
+    background: $accent-primary-dark;
+    box-shadow: rgba(4, 17, 29, 25%) 0px 0px 8px 0px;
+    color: $primary-light;
+  }
+
+  &:disabled {
+    color: $accent-primary-dark;
+    cursor: unset;
+  }
+}
+
+.button-secondary {
+  @extend %button;
+  color: $accent-primary;
+
+  &:hover:not([disabled]), &:active:not([disabled]) {
+    border: 1px solid $accent-primary-dark;
+    color: $accent-primary-dark;
+    box-shadow: rgba(4, 17, 29, 25%) 0px 0px 8px 0px;
+  }
+}
+
+.button-tertiary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: $accent-primary;
+
+  &:last-child {
+    margin-left: 0.8rem;
+  }
+
+  &:hover, &:active {
+    color: $accent-primary-dark;
+  }
+}
