@@ -11,7 +11,7 @@
 
   &__logo {
     max-width: 16rem;
-    margin-left: 2rem;
+    margin: 0 2rem;
   }
 
   &__item {
@@ -25,6 +25,37 @@
 
     &:hover {
       color: $secondary-dark;
+    }
+  }
+
+  &__subnav {
+    flex: 1;
+  }
+
+  &__hamburger-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px){
+    &__right-section {
+      flex: 1;
+    }
+
+    &__subnav {
+      flex: unset;
+    }
+  }
+
+  @media screen and (max-width: 991px){
+    &__item:not(.main-navbar__item--logo-item) {
+      display: none;
+    }
+
+    &__hamburger-icon {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0 2rem;
     }
   }
 }
