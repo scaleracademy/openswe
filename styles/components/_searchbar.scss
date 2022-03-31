@@ -1,0 +1,13 @@
+.search-bar {
+  border: 1px solid rgba($color: $tertiary-dark, $alpha: 0.5);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-weight: 400;
+  font-size: $font-2;
+  color: $tertiary-dark;
+
+  input {
+    border: unset;
+    width: 100%;
+  }
+}
