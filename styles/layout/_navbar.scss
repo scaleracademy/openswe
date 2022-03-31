@@ -47,15 +47,17 @@
   }
 
   @media screen and (max-width: 991px){
-    &__item:not(.main-navbar__item--logo-item) {
-      display: none;
+    &__item {
+      &:not(.main-navbar__item--logo-item) {
+        display: none;
+      }
     }
 
     &__hamburger-icon {
       display: flex;
       align-items: center;
       height: 100%;
-      padding: 0 2rem;
+      padding-right: 2rem;
     }
   }
 }
