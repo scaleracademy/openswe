@@ -6,3 +6,8 @@
     color: $secondary-dark !important;
   }
 }
+
+.dark-mode-toggle {
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
