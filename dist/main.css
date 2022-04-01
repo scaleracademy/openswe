@@ -741,6 +741,9 @@ section {
 .main-navbar__item:hover {
   color: rgb(53, 56, 64);
 }
+.main-navbar__item.dark-mode-toggle {
+  padding-left: unset;
+}
 .main-navbar__subnav {
   flex: 1;
 }
@@ -1188,14 +1191,14 @@ section {
   color: rgb(53, 56, 64) !important;
 }
 
-.dark-mode-toggle {
+.dark-mode-toggle span {
   transform: rotate(45deg);
   transition: transform 0.2s ease;
 }
 
 .dark-theme {
   filter: invert(1) hue-rotate(180deg);
-  transition: color 500ms, background-color 500ms, background 500ms;
+  transition: color 500ms, background-color 500ms;
 }
 .dark-theme img:not(.logo) {
   filter: invert(1) hue-rotate(180deg);
