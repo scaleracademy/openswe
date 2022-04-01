@@ -13,7 +13,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="scripts/navbar.js" defer></script>
+  <script src="scripts/popover.js" defer></script>
 </head>
 <body class="">
   <div class="main-navbar row no-gutters">
@@ -57,9 +59,9 @@
     <div class="hamburger-navbar__item">Become One</div>
     <div class="hamburger-navbar__item">Night Mode</div>
   </div>
-  <div class="hamburger-active-overlay"></div>
+  <!-- <div class="hamburger-active-overlay"></div> -->
   <div class="container m-t-20">
-    <div class="section pilot-section">
+    <section class="pilot-section">
       <div class="pilot-section__bg"></div>
       <div class="pilot-section__left flex-col">
         <div class="pilot-section__content flex-col">
@@ -83,10 +85,94 @@
               <span class="bold font-2">Desert Oddities #1</span>
               <a class="m-t-5" href="#">@alwayswannaly</a>
             </span>
+            <span id="hehe" class="pilot-section__icon material-icons-outlined">info</span>
+            <div id="tooltip" class="oswe-tooltip" data-popper-arrow data-parentid="hehe">
+              <div class="content">
+                Hello World!
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="collections-section flex-col">
+      <h2 class="bold font-5 m-b-40">Top collections over <span>last 7 days</span></h2>
+      <div class="collections-section__container">
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">1</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">2</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">3</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">4</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">5</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">6</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">7</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">8</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">9</span>
+          <img href="#" class="collections-section__img m-r-10" src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100" />
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+      </div>
+      <button class="button-primary m-t-40">Go to Rankings</button>
+    </section>
   </div>
 </body>
 </html>

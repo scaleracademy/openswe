@@ -1,4 +1,10 @@
 @import 'components/buttons';
 @import 'components/searchbar';
+@import 'components/tooltip';
+
+section {
+  margin-bottom: 12rem;
+}
 
 @import 'components/pilot-section';
+@import 'components/collections-section';

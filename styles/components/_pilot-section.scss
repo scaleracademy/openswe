@@ -23,6 +23,11 @@ $ps-breakpoint: 1000px;
     }
   }
 
+  &__icon {
+    margin-left: auto;
+    cursor: pointer;
+  }
+
   &__content {
     justify-content: center;
 
