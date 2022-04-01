@@ -3,10 +3,9 @@ const tooltips = document.querySelectorAll('.oswe-tooltip');
 const showEvents = ['mouseenter', 'focus'];
 const hideEvents = ['mouseleave', 'blur'];
 
-
 tooltips.forEach((tooltip) => {
   const { parentid } = tooltip.dataset;
-  console.log(tooltip.dataset);
+
   const parentEl = document.getElementById(parentid);
   const popperInstance = Popper.createPopper(parentEl, tooltip, {
     placement: 'top',
