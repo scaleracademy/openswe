@@ -171,3 +171,6 @@ Loading complete
 
 # SASS
 .sass-cache/
+
+
+.DS_Store
