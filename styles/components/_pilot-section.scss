@@ -46,11 +46,11 @@ $ps-breakpoint: 1000px;
   }
 
   &__heading {
-    font-size: $font-6;
+    font-size: $font-large;
     margin-left: 0;
 
     @media screen and (max-width: $ps-breakpoint) {
-      font-size: $font-4;
+      font-size: $font-5;
       max-width: 45rem;
       margin: auto;
     }
