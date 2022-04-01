@@ -36,6 +36,10 @@
     display: none;
   }
 
+  &__search-icon {
+    display: none;
+  }
+
   @media screen and (max-width: 1199px){
     &__right-section {
       flex: 1;
@@ -47,15 +51,36 @@
   }
 
   @media screen and (max-width: 991px){
-    &__item:not(.main-navbar__item--logo-item) {
-      display: none;
+    &__item {
+      &:not(.main-navbar__item--logo-item) {
+        display: none;
+      }
     }
 
     &__hamburger-icon {
       display: flex;
       align-items: center;
       height: 100%;
-      padding: 0 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    &__item {
+      &--logo-item {
+        display: none;
+      }
+    }
+
+    .search-bar {
+      display: none;
+    }
+
+    &__search-icon {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 2rem;
     }
   }
 }

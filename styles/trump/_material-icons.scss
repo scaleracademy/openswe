@@ -1,0 +1,13 @@
+.material-icon-large {
+  font-size: 3.2rem !important;
+  color: $tertiary-dark !important;
+
+  &:hover {
+    color: $secondary-dark !important;
+  }
+}
+
+.dark-mode-toggle {
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
