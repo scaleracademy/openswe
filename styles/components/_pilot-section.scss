@@ -64,12 +64,12 @@ $ps-breakpoint: 1000px;
   &__right {
     margin-top: 4rem;
     flex-basis: 50%;
-    box-shadow: rgb(4 17 29 / 25%) 0px 0px 10px 0px;
+    box-shadow: rgba(4, 17, 29, 25%) 0px 0px 10px 0px;
     border-radius: 1rem;
 
     &:hover {
       transition: box-shadow 0.3s ease-in 0s;
-      box-shadow: rgb(4 17 29 / 25%) 0px 0px 50px 0px;
+      box-shadow: rgba(4, 17, 29, 25%) 0px 0px 50px 0px;
     }
 
     @media screen and (max-width: $ps-breakpoint) {
