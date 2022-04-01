@@ -14,12 +14,13 @@ hamburgerToggleButton.addEventListener("click", (e) => {
     hamburgerActiveOverlay.classList.remove("hamburger-active-overlay--active");
   }
 });
+
 nightModeToggleButton.addEventListener("click", (e) => {
   if (document.body.classList.contains("dark-theme")) {
     document.body.classList.remove("dark-theme");
-    nightModeToggleButton.firstChild.nodeValue = "mode_night";
+    nightModeToggleButton.childNodes[1].firstChild.nodeValue = "mode_night";
   } else {
     document.body.classList.add("dark-theme");
-    nightModeToggleButton.firstChild.nodeValue = "light_mode";
+    nightModeToggleButton.childNodes[1].firstChild.nodeValue = "light_mode";
   }
 })

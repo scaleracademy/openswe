@@ -1,6 +1,6 @@
 .dark-theme {
   filter: invert(1) hue-rotate(180deg);
-  transition: color 500ms, background-color 500ms, background 500ms;
+  transition: color 500ms, background-color 500ms;
 
   img:not(.logo) {
     filter: invert(1) hue-rotate(180deg);

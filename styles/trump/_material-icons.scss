@@ -8,6 +8,8 @@
 }
 
 .dark-mode-toggle {
-  transform: rotate(45deg);
-  transition: transform 0.2s ease;
+  span {
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
 }
