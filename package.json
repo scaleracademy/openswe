@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "sass styles/main.scss:dist/main.css"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com-bipinkalra-scaler:scaleracademy/openswe.git"

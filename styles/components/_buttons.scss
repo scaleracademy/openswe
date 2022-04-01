@@ -8,6 +8,10 @@
   cursor: pointer;
   transition: all 0.2s ease 0s;
   border-radius: 1rem;
+
+  &.large {
+    padding: 1rem 4rem;
+  }
 }
 
 .button-primary {
@@ -31,6 +35,7 @@
 .button-secondary {
   @extend %button;
   color: $accent-primary;
+  background-color: $primary-light;
 
   &:hover:not([disabled]), &:active:not([disabled]) {
     border: 1px solid $accent-primary-dark;

@@ -13,7 +13,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="scripts/navbar.js" defer></script>
+  <script src="scripts/popover.js" defer></script>
 </head>
 <body class="">
   <div class="main-navbar row no-gutters">
@@ -57,6 +59,125 @@
     <div class="hamburger-navbar__item">Become One</div>
     <div class="hamburger-navbar__item">Night Mode</div>
   </div>
-  <div class="hamburger-active-overlay"></div>
+  <!-- <div class="hamburger-active-overlay"></div> -->
+  <div class="container m-t-20">
+    <section class="pilot-section">
+      <div class="pilot-section__bg"></div>
+      <div class="pilot-section__left flex-col">
+        <div class="pilot-section__content flex-col">
+          <h1 class="bold pilot-section__heading">Discover, collect and sell extraordinary NFTs</h1>
+          <p class="light font-5 m-t-20 pilot-section__subheading"> OpenSea is the world's first and largest NFT marketplace</p>
+          <div class="flex-row m-t-20">
+            <button class="button-primary m-r-20 large">Explore</button>
+            <button class="button-secondary large">Create</button>
+          </div>
+        </div>
+        <a href="#" class="font-3 bold text-accent-primary pilot-section__note">
+          <span class="material-icons-outlined m-r-5">
+            play_circle_filled
+          </span>
+          Learn more about OpenSea
+        </a>
+      </div>
+      <div class="pilot-section__right m-l-20">
+        <div class="flex-col pilot-section__img-container">
+          <a href="#">
+            <img src="https://lh3.googleusercontent.com/TUwGZzku9LHHDosRDt0xqAUW6-ao7YGvM3p0FYP5IxfyJXk2q3dL0Tilsij1NWN-Sw31jj0gsgCPMSkrMBWMMV3U3rZwKSIx4F9_=s550"/>
+          </a>
+          <div class="pilot-section__img-footer flex-row">
+            <span href="#" class="pilot-section__img m-r-10 cryptopunk-img-13"></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <a class="m-t-5" href="#">@alwayswannaly</a>
+            </span>
+            <span id="hehe" class="pilot-section__icon material-icons-outlined">info</span>
+            <div id="tooltip" class="oswe-tooltip" data-popper-arrow data-parentid="hehe">
+              <div class="content">
+                Hello World!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="collections-section flex-col">
+      <h2 class="bold font-5 m-b-40">Top collections over <span>last 7 days</span></h2>
+      <div class="collections-section__container">
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">1</span>
+          <span href="#" class="cryptopunk-img-1 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">2</span>
+          <span href="#" class="cryptopunk-img-2 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">3</span>
+          <span href="#" class="cryptopunk-img-3 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">4</span>
+          <span href="#" class="cryptopunk-img-4 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">5</span>
+          <span href="#" class="cryptopunk-img-5 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">6</span>
+          <span href="#" class="cryptopunk-img-6 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">7</span>
+          <span href="#" class="cryptopunk-img-7 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">8</span>
+          <span href="#" class="cryptopunk-img-8 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+        <div class="collections-section__item flex-row">
+          <span class="bold font-4 m-r-10">9</span>
+          <span href="#" class="cryptopunk-img-9 collections-section__img m-r-10"></span>
+          <span class="flex-col">
+            <span class="bold font-2">Desert Oddities #1</span>
+            <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+          </span>
+        </div>
+      </div>
+      <button class="button-primary m-t-40">Go to Rankings</button>
+    </section>
+  </div>
 </body>
 </html>
