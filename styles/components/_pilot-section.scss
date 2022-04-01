@@ -1,9 +1,5 @@
 $ps-breakpoint: 1000px;
 
-.section {
-  margin-bottom: 2rem;
-}
-
 .pilot-section {
   display: flex;
   flex-direction: row;
@@ -32,6 +28,11 @@ $ps-breakpoint: 1000px;
     display: flex;
     align-items: center;
     margin-top: 2rem;
+
+    @media screen and (max-width: $ps-breakpoint) {
+      margin: auto;
+      margin-top: 0;
+    }
   }
 
   &__content {
