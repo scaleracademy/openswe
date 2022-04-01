@@ -363,6 +363,14 @@ img {
 .bg-red {
   background-color: #eb5757; }
 
+.text-gray {
+  color: rgb(171, 171, 171);
+}
+
+.bg-gray {
+  background-color: rgb(171, 171, 171);
+}
+
 .text-primary-dark {
   color: #04111d; }
 
@@ -675,6 +683,47 @@ section {
   background-color: rgba(0, 0, 0, 0.15); }
   .hamburger-active-overlay--active {
     opacity: 1; }
+
+.section-trending {
+  margin: 30px 10vw 20vh 10vw;
+  width: 80vw;
+}
+.section-trending .center {
+  text-align: center;
+}
+.section-trending h1 span {
+  color: rgb(24, 104, 183);
+}
+.section-trending .card {
+  margin: 20px;
+  width: 400px;
+  min-height: 400px;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 15px;
+}
+.section-trending .card img {
+  height: 25vh;
+  border-radius: 15px 15px 0 0;
+}
+.section-trending .card .card-body {
+  padding: 15px 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+.section-trending .card .card-body .card-title {
+  margin-bottom: 20px;
+}
+.section-trending .card .card-body .card-title h5 {
+  color: rgb(171, 171, 171);
+}
+.section-trending .card .card-body .card-title h5 span {
+  color: rgb(32, 129, 226);
+}
+.section-trending .card .card-body .subtext {
+  color: rgb(171, 171, 171);
+  font-weight: 400;
+}
 
 .no-gutters {
   margin-right: 0;

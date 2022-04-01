@@ -1,0 +1,50 @@
+.section-trending {
+  margin: 30px 10vw 20vh 10vw;
+  width: 80vw;
+  .center {
+    text-align: center;
+  }
+
+  h1 {
+    span {
+      color: $accent-primary-dark;
+    }
+  }
+
+  .card {
+    margin: 20px;
+    width: 400px;
+    min-height: 400px;
+    // background: rgb(215, 224, 227);
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 15px;
+
+    img {
+      height: 25vh;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+      padding: 15px 20px;
+      font-size: $font-3;
+      font-weight: bold;
+      text-align: center;
+
+      .card-title {
+        margin-bottom: 20px;
+
+        h5 {
+          color: $gray;
+          span {
+            color: $accent-primary;
+          }
+        }
+      }
+
+      .subtext {
+        color: $gray;
+        font-weight: 400;
+      }
+    }
+  }
+}
