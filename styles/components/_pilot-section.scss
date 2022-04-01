@@ -1,12 +1,9 @@
 $ps-breakpoint: 1000px;
 
-.section {
-  margin-bottom: 2rem;
-}
-
 .pilot-section {
   display: flex;
   flex-direction: row;
+  text-align: left;
 
   @media screen and (max-width: $ps-breakpoint) {
     text-align: center;
@@ -32,6 +29,11 @@ $ps-breakpoint: 1000px;
     display: flex;
     align-items: center;
     margin-top: 2rem;
+
+    @media screen and (max-width: $ps-breakpoint) {
+      margin: auto;
+      margin-top: 0;
+    }
   }
 
   &__content {
@@ -44,10 +46,11 @@ $ps-breakpoint: 1000px;
   }
 
   &__heading {
-    font-size: $font-large;
+    font-size: $font-6;
+    margin-left: 0;
 
     @media screen and (max-width: $ps-breakpoint) {
-      font-size: $font-6;
+      font-size: $font-4;
       max-width: 45rem;
       margin: auto;
     }
@@ -63,12 +66,12 @@ $ps-breakpoint: 1000px;
   &__right {
     margin-top: 4rem;
     flex-basis: 50%;
-    box-shadow: rgb(4 17 29 / 25%) 0px 0px 10px 0px;
+    box-shadow: rgba(4, 17, 29, 25%) 0px 0px 10px 0px;
     border-radius: 1rem;
 
     &:hover {
       transition: box-shadow 0.3s ease-in 0s;
-      box-shadow: rgb(4 17 29 / 25%) 0px 0px 50px 0px;
+      box-shadow: rgba(4, 17, 29, 25%) 0px 0px 50px 0px;
     }
 
     @media screen and (max-width: $ps-breakpoint) {
@@ -93,5 +96,12 @@ $ps-breakpoint: 1000px;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
+  }
+  
+  h1 {
+    s {
+      color: #666;
+   
+    }
   }
 }

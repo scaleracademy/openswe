@@ -26,6 +26,10 @@
     &:hover {
       color: $secondary-dark;
     }
+
+    &.dark-mode-toggle {
+      padding-left: unset;
+    }
   }
 
   &__subnav {
