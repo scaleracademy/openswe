@@ -28,6 +28,12 @@ $ps-breakpoint: 1000px;
     cursor: pointer;
   }
 
+  &__note {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
   &__content {
     justify-content: center;
 
