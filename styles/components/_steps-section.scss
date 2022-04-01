@@ -1,0 +1,40 @@
+.steps-section {
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__item {
+    flex-basis: 30%;
+    padding: 2rem;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent rgb(229, 232, 235);
+    cursor: pointer;
+
+    @media screen and (max-width: $ps-breakpoint) {
+      flex-basis: 100%;
+      max-width: fit-content;
+      margin: auto;
+    }
+
+    &:hover {
+      transition: all 0.2s ease 0s;
+      box-shadow: rgba(4, 17, 29, 25%) 0px 0px 8px 0px;
+      background-color: rgb(251, 253, 255);
+      border-radius: 10px;
+      border: 1px solid rgb(229, 232, 235);
+    }
+  }
+}
