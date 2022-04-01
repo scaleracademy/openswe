@@ -1,0 +1,54 @@
+.notable-drops-section {
+    height: 100vh;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .notable-nft {
+        cursor: pointer;
+        background-size: cover;
+        height: 600px;
+        max-width: 30vw;
+        margin: 20px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            box-shadow: rgba(4, 17, 29, 25%) 0px 0px 8px 0px;
+        }
+
+        .content {
+            margin-top: auto;
+            padding: 25px;
+
+            color: $primary-light;
+            h3 {
+                font-weight: bold;
+                font-size: $font-4;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: $font-3;
+            }
+        }
+    }
+    .notable-nft-1 {
+        background-image: url("https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    }
+    .notable-nft-2 {
+        background-image: url("https://images.unsplash.com/photo-1475113548554-5a36f1f523d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2931&q=80");
+    }
+    .notable-nft-3 {
+        background-image: url("https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");   
+    }
+    .notable-nft-4 {
+        background-image: url("https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    }
+    .notable-nft-5 {
+        background-image: url("https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80")
+    }
+}
