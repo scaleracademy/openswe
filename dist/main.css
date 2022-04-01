@@ -582,13 +582,10 @@ section {
   margin-bottom: 12rem;
 }
 
-.section {
-  margin-bottom: 2rem;
-}
-
 .pilot-section {
   display: flex;
   flex-direction: row;
+  text-align: left;
 }
 @media screen and (max-width: 1000px) {
   .pilot-section {
@@ -615,6 +612,12 @@ section {
   align-items: center;
   margin-top: 2rem;
 }
+@media screen and (max-width: 1000px) {
+  .pilot-section__note {
+    margin: auto;
+    margin-top: 0;
+  }
+}
 .pilot-section__content {
   justify-content: center;
 }
@@ -625,11 +628,12 @@ section {
   }
 }
 .pilot-section__heading {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
+  margin-left: 0;
 }
 @media screen and (max-width: 1000px) {
   .pilot-section__heading {
-    font-size: 3.2rem;
+    font-size: 2rem;
     max-width: 45rem;
     margin: auto;
   }
@@ -667,6 +671,9 @@ section {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
+}
+.pilot-section h1 s {
+  color: #666;
 }
 
 .collections-section {
@@ -1288,6 +1295,76 @@ section {
   width: 50px;
   height: 50px;
   background: url("/assets/crypto-punk.png") -220px -220px;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+abbr[title]:focus {
+  position: relative;
+  outline: none;
+  border: none;
+  background: rgb(229, 229, 138);
+  color: rgba(26, 26, 26, 0.623);
+}
+abbr[title]:focus:before, abbr[title]:focus:after {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+abbr[title]:focus:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 6px solid rgba(0, 0, 0, 0.8);
+}
+abbr[title]:focus:after {
+  content: attr(title);
+  width: 400px;
+  font-size: 0.45em;
+  color: #fff;
+  text-align: center;
+  margin-top: 6px;
+  padding: 0.8em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+}
+
+body {
+  text-align: center;
+  background-color: #F8F8F8;
+  color: #757575;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  color: #222;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em auto;
+  max-width: 420px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@ $ps-breakpoint: 1000px;
 .pilot-section {
   display: flex;
   flex-direction: row;
+  text-align: left;
 
   @media screen and (max-width: $ps-breakpoint) {
     text-align: center;
@@ -45,10 +46,11 @@ $ps-breakpoint: 1000px;
   }
 
   &__heading {
-    font-size: $font-large;
+    font-size: $font-6;
+    margin-left: 0;
 
     @media screen and (max-width: $ps-breakpoint) {
-      font-size: $font-6;
+      font-size: $font-4;
       max-width: 45rem;
       margin: auto;
     }
@@ -94,5 +96,12 @@ $ps-breakpoint: 1000px;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
+  }
+  
+  h1 {
+    s {
+      color: #666;
+   
+    }
   }
 }

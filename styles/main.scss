@@ -5,3 +5,81 @@
 @import 'utilities';
 @import 'trump';
 @import 'sprites';
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+
+  &:focus {
+    position: relative;
+    outline: none;
+    border: none;
+    background: rgb(229, 229, 138);
+    color: rgba(26, 26, 26, 0.623);
+    
+    &:before, &:after {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+      
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 6px solid rgba(0,0,0,0.8);
+    }
+
+    &:after {
+      content: attr(title);
+      width: 400px;
+      font-size: .45em;
+      color: #fff;
+      text-align: center;
+      margin-top: 6px;
+      padding: .8em;
+      background-color: rgba(0,0,0,.8);
+      border-radius: 3px;
+    }
+  }
+}
+
+// Some convenience styles, 
+// not necessary for the abbr styling!
+//=====================================
+
+body {
+  text-align: center;
+  background-color: #F8F8F8;
+  color: #757575;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  color: #222;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em auto;
+  max-width: 420px;
+  text-align: left;
+}
