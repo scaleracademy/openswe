@@ -38,10 +38,12 @@
       defer
     ></script>
 
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Popper JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
     <script src="scripts/carousel.js" defer></script>
     <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/popover.js" defer></script>
   </head>
   <body>
     <div class="main-navbar row no-gutters">
@@ -60,26 +62,110 @@
           </div>
         </div>
         <div
-          class="main-navbar__subnav d-flex align-items-center justify-content-end h-100"
+          class="col-xxl-9 col-xl-10 d-flex h-100 align-items-center main-navbar__right-section"
         >
-          <div class="main-navbar__item">Explore</div>
-          <div class="main-navbar__item">Stats</div>
-          <div class="main-navbar__item">Become One</div>
-          <div class="main-navbar__item main-navbar__item--logo-item">
-            <span class="material-icons-outlined material-icon-large">
-              account_circle
-            </span>
+          <div class="flex-1">
+            <div class="search-bar text">
+              <input
+                type="text"
+                placeholder="Search the best software engineers"
+              />
+            </div>
           </div>
-          <div class="main-navbar__item main-navbar__item--logo-item">
-            <span class="material-icons material-icon-large dark-mode-toggle">
-              mode_night
-            </span>
+          <div
+            class="main-navbar__subnav d-flex align-items-center justify-content-end h-100"
+          >
+            <div class="main-navbar__item">Explore</div>
+            <div class="main-navbar__item">Stats</div>
+            <div class="main-navbar__item">Become One</div>
+            <div class="main-navbar__item main-navbar__item--logo-item">
+              <span class="material-icons-outlined material-icon-large">
+                account_circle
+              </span>
+            </div>
+            <div class="main-navbar__item main-navbar__item--logo-item">
+              <span class="material-icons material-icon-large dark-mode-toggle">
+                mode_night
+              </span>
+            </div>
+            <div class="main-navbar__search-icon">
+              <div class="material-icons material-icon-large">search</div>
+            </div>
+            <div class="main-navbar__hamburger-icon">
+              <span class="material-icons material-icon-large">menu</span>
+            </div>
           </div>
-          <div class="main-navbar__search-icon">
-            <div class="material-icons material-icon-large">search</div>
+        </div>
+      </div>
+      <div class="hamburger-navbar hamburger-navbar--hidden">
+        <div class="hamburger-navbar__item">Explore</div>
+        <div class="hamburger-navbar__item">Stats</div>
+        <div class="hamburger-navbar__item">Become One</div>
+        <div class="hamburger-navbar__item">Night Mode</div>
+      </div>
+      <div class="hamburger-active-overlay"></div>
+
+      <!-- Trending in all categories -->
+      <div class="section-resources">
+        <h1 class="font-5 bold center">Trending in all categories</h1>
+        <div class="carousel">
+          <div class="carousel-cell">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+              />
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="bold font-4">Lorem Ipsum</h4>
+                  <h5 class="font-2">by <span>Tarun Luthra</span></h5>
+                </div>
+                <div class="subtext font-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus ea libero, harum veniam ipsam in maxime est ad
+                  voluptate facere.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="main-navbar__hamburger-icon">
-            <span class="material-icons material-icon-large">menu</span>
+          <div class="carousel-cell">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                alt=""
+              />
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="bold font-4">Sit ad Rem</h4>
+                  <h5 class="font-2">by <span>Bipin Kalra</span></h5>
+                </div>
+                <div class="subtext font-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero ex labore quibusdam vitae nesciunt modi eaque, soluta
+                  debitis provident accusamus harum consectetur quisquam tempora
+                  aspernatur nisi sit ad rem doloribus!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
+                alt=""
+              />
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="bold font-4">Amet Consectetur</h4>
+                  <h5 class="font-2">by <span>Arnav Gupta</span></h5>
+                </div>
+                <div class="subtext font-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Harum quia ipsum maiores, a sit voluptates, nihil sapiente cum
+                  id, impedit consequuntur excepturi neque fuga earum.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -90,71 +176,173 @@
       <div class="hamburger-navbar__item">Become One</div>
       <div class="hamburger-navbar__item">Night Mode</div>
     </div>
-    <div class="hamburger-active-overlay"></div>
-
-    <!-- Trending in all categories -->
-    <div class="section-resources">
-      <h1 class="font-5 bold center">Trending in all categories</h1>
-      <div class="carousel">
-        <div class="carousel-cell">
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <h4 class="bold font-4">Lorem Ipsum</h4>
-                <h5 class="font-2">by <span>Tarun Luthra</span></h5>
-              </div>
-              <div class="subtext font-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus ea libero, harum veniam ipsam in maxime est ad
-                voluptate facere.
+    <!-- <div class="hamburger-active-overlay"></div> -->
+    <div class="container m-t-20">
+      <section class="pilot-section">
+        <div class="pilot-section__bg"></div>
+        <div class="pilot-section__left flex-col">
+          <div class="pilot-section__content flex-col">
+            <h1 class="bold pilot-section__heading">
+              Discover, collect and sell extraordinary NFTs
+            </h1>
+            <p class="light font-5 m-t-20 pilot-section__subheading">
+              OpenSea is the world's first and largest NFT marketplace
+            </p>
+            <div class="flex-row m-t-20">
+              <button class="button-primary m-r-20 large">Explore</button>
+              <button class="button-secondary large">Create</button>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="font-3 bold text-accent-primary pilot-section__note"
+          >
+            <span class="material-icons-outlined m-r-5">
+              play_circle_filled
+            </span>
+            Learn more about OpenSea
+          </a>
+        </div>
+        <div class="pilot-section__right m-l-20">
+          <div class="flex-col pilot-section__img-container">
+            <a href="#">
+              <img
+                src="https://lh3.googleusercontent.com/TUwGZzku9LHHDosRDt0xqAUW6-ao7YGvM3p0FYP5IxfyJXk2q3dL0Tilsij1NWN-Sw31jj0gsgCPMSkrMBWMMV3U3rZwKSIx4F9_=s550"
+              />
+            </a>
+            <div class="pilot-section__img-footer flex-row">
+              <span
+                href="#"
+                class="pilot-section__img m-r-10 cryptopunk-img-13"
+              ></span>
+              <span class="flex-col">
+                <span class="bold font-2">Desert Oddities #1</span>
+                <a class="m-t-5" href="#">@alwayswannaly</a>
+              </span>
+              <span
+                id="hehe"
+                class="pilot-section__icon material-icons-outlined"
+                >info</span
+              >
+              <div
+                id="tooltip"
+                class="oswe-tooltip"
+                data-popper-arrow
+                data-parentid="hehe"
+              >
+                <div class="content">Hello World!</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-cell">
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <h4 class="bold font-4">Sit ad Rem</h4>
-                <h5 class="font-2">by <span>Bipin Kalra</span></h5>
-              </div>
-              <div class="subtext font-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                ex labore quibusdam vitae nesciunt modi eaque, soluta debitis
-                provident accusamus harum consectetur quisquam tempora
-                aspernatur nisi sit ad rem doloribus!
-              </div>
-            </div>
+      </section>
+      <section class="collections-section flex-col">
+        <h2 class="bold font-5 m-b-40">
+          Top collections over <span>last 7 days</span>
+        </h2>
+        <div class="collections-section__container">
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">1</span>
+            <span
+              href="#"
+              class="cryptopunk-img-1 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">2</span>
+            <span
+              href="#"
+              class="cryptopunk-img-2 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">3</span>
+            <span
+              href="#"
+              class="cryptopunk-img-3 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">4</span>
+            <span
+              href="#"
+              class="cryptopunk-img-4 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">5</span>
+            <span
+              href="#"
+              class="cryptopunk-img-5 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">6</span>
+            <span
+              href="#"
+              class="cryptopunk-img-6 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">7</span>
+            <span
+              href="#"
+              class="cryptopunk-img-7 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">8</span>
+            <span
+              href="#"
+              class="cryptopunk-img-8 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
+          </div>
+          <div class="collections-section__item flex-row">
+            <span class="bold font-4 m-r-10">9</span>
+            <span
+              href="#"
+              class="cryptopunk-img-9 collections-section__img m-r-10"
+            ></span>
+            <span class="flex-col">
+              <span class="bold font-2">Desert Oddities #1</span>
+              <span class="m-t-5 text-tertiary-dark">Floor Price: ETH 1</span>
+            </span>
           </div>
         </div>
-        <div class="carousel-cell">
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
-              alt=""
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <h4 class="bold font-4">Amet Consectetur</h4>
-                <h5 class="font-2">by <span>Arnav Gupta</span></h5>
-              </div>
-              <div class="subtext font-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
-                quia ipsum maiores, a sit voluptates, nihil sapiente cum id,
-                impedit consequuntur excepturi neque fuga earum.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <button class="button-primary m-t-40">Go to Rankings</button>
+      </section>
     </div>
   </body>
 </html>
